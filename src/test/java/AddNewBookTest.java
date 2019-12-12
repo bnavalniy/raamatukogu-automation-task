@@ -32,7 +32,7 @@ public class AddNewBookTest {
     }
 
     @Test
-    @DisplayName("Test add new book with existing author - assert created book info")
+    @DisplayName("Add new book with existing author - assert created book info")
     void addNewBookTest() throws IllegalAccessException {
         navigation.toAddNewBook();
         createBookPage = new CreateBookPage();
@@ -64,7 +64,7 @@ public class AddNewBookTest {
     }
 
     @Test
-    @DisplayName("Test add new book - assert is book exist catalog")
+    @DisplayName("Add new book - verify if created book exists in the catalog")
     void addNewBookAndAssert() throws IllegalAccessException, InterruptedException {
         navigation.toAddNewBook();
         createBookPage = new CreateBookPage();
